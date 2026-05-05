@@ -29,8 +29,6 @@ This project is a work-in-progress calculator that will be able to take in strin
 - `History`  
   Intended to store previously evaluated expressions in a structured format.
 
----
-
 ##  Work in Progress
 
 This project is still being developed. Planned improvements include:
