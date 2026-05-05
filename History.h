@@ -1,8 +1,9 @@
-/*
-A binary tree to hold values
-*/
 #pragma once
+// Headers
 #include "Equation.h"
+
+//Libraries
+#include <memory>
 
 class History
 {
@@ -15,12 +16,12 @@ private:
 
     Equation Problem;
     int Length;
-    Equation *LExpr;
-    Equation *RExpr;
+    std::unique_ptr<Equation> LExpr;
+    std::unique_ptr<Equation> RExpr;
   };
 
   ExprNode *m_root;
-  
+
   public:
 History();
 ~History();
