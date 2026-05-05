@@ -20,7 +20,13 @@ class Shape
 };
 
 /*
-Type "NULL" if value is unknown. 3 unknown values instantly error      
+Type "NULL" if value is unknown. 
+3 unknown values instantly error 
+Triangle ./main [Theta Angle] [adj] [opp] [hyp] 
+Circle ./main [Circumference] [Radius] [Area] 
+Polygon ./main [csv file] contains [interrior angle 1] [Side length 1] [interior angle n] [side length n] 
+polygon may be changed 
+    
 Triangle    
 ./main [Theta Angle] [adj] [opp] [hyp] 
 Circle      
