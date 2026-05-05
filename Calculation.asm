@@ -41,9 +41,3 @@ section .text
 ;
 ;
 ; returns missing variable in rax \theta => [adj] => [opp] => [hyp]
-triangleCalculation
-ret
-circleCalculation
-ret
-polygonCalculation
-ret
