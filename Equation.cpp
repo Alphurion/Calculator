@@ -1,7 +1,5 @@
 // Headers
 #include "Equation.h"
-#include "Solution.h"
-#include "History.h"
 
 // Libraries
 #include <expected>
@@ -9,9 +7,9 @@
 #include <string>
 #include <set>
 
-const Solution _pi("3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679", 1);
-const Solution _e("2.7182818284590452353602874713527", 1);
-const Solution _golden_ratio("1.61803398874989484820", 1);
+const Solution _pi("3.141592", 1);
+const Solution _e("2.718281", 1);
+const Solution _golden_ratio("1.618034", 1);
 const Solution _gravity("9.80665", 1);
 
 
