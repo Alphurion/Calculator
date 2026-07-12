@@ -1,10 +1,33 @@
 
 #pragma once
 //Headers
-#include "Solution.h"
 #include "Token.h"
 // Libraries
 #include <string>
+#include <memory>
+
+class Solution
+{
+
+private:
+  enum class Solution_State
+  {
+    NUMERIC,
+    SYMBOLIC,
+    ERROR
+  };
+  std::string m_Evaluation;
+  Solution_State m_State;
+
+public:
+  Solution();
+  Solution(std::string digits, int state)
+  {
+    m_Evaluation = digits;
+  };
+  ~Solution();
+  void Print();
+};
 
 class Equation
 {
@@ -30,6 +53,28 @@ private:
   */
 public:
   Equation(std::string problem);
+  Token problem;
   std::string Solve();
   void Print();
+};
+
+class History
+{
+private:
+  struct ExprNode
+  {
+
+    ExprNode(Equation problem, int Length);
+    ~ExprNode();
+
+    Equation Problem;
+    int Length;
+  };
+  ExprNode *m_root;
+
+  public:
+History();
+~History();
+void Push_Back(Equation expression);
+
 };
