@@ -1,10 +1,13 @@
-#include "Solution.h"
-#include "Shape.h"
 #include "Equation.h"
-#include "History.h"
-#include "Token.h"
+#include <string>
+#include <iostream>
 
-int main(int argc, char* argv)
+int main()
 {
-
+  std::string problem;
+  std::cout << "Enter an equation to solve: ";
+  std::cin >> problem;
+  Equation equation(problem);
+  std::cout << equation.Solve() << std::endl;
+  return 0;
 }
