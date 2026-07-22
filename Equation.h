@@ -1,4 +1,3 @@
-
 #pragma once
 //Headers
 #include "Token.h"
@@ -40,7 +39,6 @@ Operator ==: Checks if problem sides are equal (recursive call)
 */
 private:
   bool Check_Validity();
-  std::string Parse();
   double Evaluate(std::string Expression);
   Equation operator=(Equation &Expr);
   bool operator==(Equation &Expr);
@@ -54,7 +52,7 @@ private:
 public:
   Equation(std::string problem);
   Token problem;
-  std::string Solve();
+  std::string Solve(Equation Expr);
   void Print();
 };
 

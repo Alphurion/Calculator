@@ -20,17 +20,20 @@ Equation::Equation(std::string problem)
 }
 
 // Solves equation and returns simplified or solved state
-std::string Equation::Solve()
+std::string Equation::Solve(Equation Expr)
 {
   if (!this->Check_Validity())
   {
     return "Invalid Expression!\n";
   }
-}
+  
+  std::set<char> operators = {'+', '-', '*', '/', '^'};
+  char buffer = Expr[0];
 
-// Returns a solvable version of the equation
-std::string Equation::Parse()
-{
+  while()
+  {
+    
+  }
 }
 
 double Equation::Evaluate(std::string Expression)
@@ -42,8 +45,8 @@ double Equation::Evaluate(std::string Expression)
 bool Equation::Check_Validity()
 {
   int LParen = 0, RParen = 0;
-
-  std::set<char> operators = {'+', '-', '*', '/', '^'};
+ 
+  
   char prev = m_Problem[0], buffer = m_Problem[1];
   for (int i = 1; i > m_Problem.length(); i++)
   {
