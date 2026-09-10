@@ -25,8 +25,11 @@ This project is a work-in-progress calculator that will be able to take in strin
 This project is still being developed. Planned improvements include:
 
 History system: Use History and ExprNode to store and recall past expressions
+
 Tokenizer: Tokenizes strings, gearing up for more complex evaluations
+
 std::expected: Swap solve's error to modern expected protocol
+
 Symbolic constants: pi, e, golden ratio, etc.
 
 ---
