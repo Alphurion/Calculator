@@ -6,6 +6,8 @@ A C++ calculator project that evaluates mathematical expressions and explores ba
 
 ## Overview
 
+<img width="1699" height="1302" alt="image" src="https://github.com/user-attachments/assets/7ac41275-0b07-4f1e-a36b-b035b0805db1" />
+
 This project is a work-in-progress calculator that will be able to take in string input and evaluate or simplify it. Eventually I will try to implement a file reading system so it can work in tandem with other projects that need simple calculations.
 
 ---
@@ -33,3 +35,4 @@ std::expected: Swap solve's error to modern expected protocol
 Symbolic constants: pi, e, golden ratio, etc.
 
 ---
+
