@@ -12,30 +12,21 @@ This project is a work-in-progress calculator that will be able to take in strin
 
 ## Features
 
-- Basic mathematical expression evaluation with or without parenthesis
-- File reading implementation for non CLI purposes
-- Tree based history design (for funsies
+- `+ - * / ^` with correct precedence and right-associative `^`
+- Parentheses, including nested
+- Unary minus
+- Basic validity checks (balanced parens, no adjacent binary operators)
+- Division-by-zero and malformed-input handled as errors, not crashes
+- REPL loop in `main.cpp` with a `quit`/`exit` command
 
----
 
-##  Project Structure
-
-- `Equation`  
-  Handles input expressions, parsing, validation, and evaluation.
-
-- `Solution`  
-  Stores evaluation results and their state (numeric, symbolic, or error).
-
-- `History`  
-  Intended to store previously evaluated expressions in a structured format.
-
-##  Work in Progress
+##  Goals
 
 This project is still being developed. Planned improvements include:
 
-- Full equation parsing
-- Support for parentheses and incomplete expressions  
-- Create history system  
-- std::expected return values  
+History system: Use History and ExprNode to store and recall past expressions
+Tokenizer: Tokenizes strings, gearing up for more complex evaluations
+std::expected: Swap solve's error to modern expected protocol
+Symbolic constants: pi, e, golden ratio, etc.
 
 ---
