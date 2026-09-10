@@ -1,6 +1,6 @@
 # Calculator
 
-A C++ calculator project that evaluates mathematical expressions and explores basic parsing, object-oriented design, and data structure usage.
+A C++23 calculator project that evaluates mathematical expressions and explores basic parsing, object-oriented design, and data structure usage.
 
 ---
 
